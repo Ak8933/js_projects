@@ -1,0 +1,152 @@
+/* Carousel Styles */
+.carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    width: 200%; /* Assuming 2 images, increase as per number of images */
+    animation: slide 10s infinite;
+}
+
+.carousel-item {
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Carousel Animation */
+@keyframes slide {
+    0%, 50% {
+        transform: translateX(0%);
+    }
+    50.1%, 100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* UI Brighter Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFD700; /* Bright Yellow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    background: rgba(255,255,255,0.8); /* Semi-transparent White */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #FF4500; /* Bright Orange */
+    margin-bottom: 20px;
+}
+
+.dropzone {
+    cursor: pointer;
+    padding: 60px 40px;
+    background: #FFFAF0; /* Creamy */
+    border: 2px dashed #FF6347; /* Tomato Red */
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+}
+
+.dropzone:hover {
+    background: #E1E3E8;
+}
+
+.dropzone p {
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.dropzone p span {
+    color: #FF6347; /* Tomato Red */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dropzone i {
+    font-size: 40px;
+    color: #FF6347; /* Tomato Red */
+    margin-bottom: 15px;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+.file-name {
+    background: #FFFACD; /* LemonChiffon */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.file-name:hover {
+    background: #E1E3E8;
+}
+
+img.thumbnail {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropzone, .file-name {
+    animation: fadeInUp 0.5s forwards;
+}
+
+.delete-icon {
+    margin-left: auto; /* Pushes the icon to the right end */
+    cursor: pointer;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 50%; /* Makes it circular */
+}
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allows vertical resizing only */
+}
+

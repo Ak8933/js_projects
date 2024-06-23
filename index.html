@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image To Do List</title>
+</head>
+
+<body>
+
+    <div class="carousel">
+        <div class="carousel-items">
+            <div class="carousel-item active" style="background-image: url('carousel1.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('carousel2.jpg');"></div>
+            
+        </div>
+    </div>
+
+    <div class="app-container">
+        <h1>Upload Your Image</h1>
+        <div class="dropzone" id="dropzone">
+            <input type="file" id="fileInput" hidden multiple accept="image/*">
+            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+            <p>Drag & Drop or <span>Click to Browse</span></p>
+        </div>
+        <div class="file-list" id="fileList">
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
