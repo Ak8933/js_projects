@@ -1,0 +1,66 @@
+body{
+    height: 100vh;
+    background: linear-gradient(to right, rgb(72, 243, 252), rgb(57, 4, 118)),
+    linear-gradient(to bottom, transparent, rgb(0, 0, 0.5));
+    background-blend-mode: multiply;
+    color: white;
+}
+
+h1{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#weather-container{
+    width: 53%;
+    /* height: 33.33vh; */
+    margin-left: 22%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), 0 9px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.03);
+    height: fit-content;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+input{
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 5px;
+    
+}
+
+input:focus {
+    border: 2px solid #000; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+  }
+
+button{
+    height: 39px;
+    background-color: orangered;
+    cursor:pointer;
+    width: 37%;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 19px;
+}
+
+h2,p{
+    display: flex;
+    justify-content: center;
+}
