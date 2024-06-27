@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/860e7596f3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </head>
+
+  <body style="background-color: rgb(0, 0, 77)">
+    <div class="audio-container">
+      <h1 class="mainH"><b>Ninja Music Player</b></h1>
+
+      <div class="audio-img-wrapper">
+        <div class="audio-img1">
+          <div class="audio-img">
+            <img
+              src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg"
+              alt=""
+              class="img"
+            />
+          </div>
+        </div>
+        <div class="text_data">
+          <h2 class="audio-title">Let me down slowly</h2>
+          <h4 class="audio-singer">Alec Benjamin</h4>
+        </div>
+      </div>
+
+      <div class="audio-progress">
+        <div class="progress">
+          <div class="progress-bar">
+            <div class="progress-circle"></div>
+          </div>
+          <div class="progress-head"></div>
+        </div>
+      </div>
+      <audio id="audio"></audio>
+      <div class="other">
+        <div class="timing">
+          <div class="current-time">00:00</div>
+          <div class="duration">03:47</div>
+        </div>
+        <div class="audio-btns">
+          <button class="btn skip-back">
+            <i class="fa-solid fa-backward-step"></i>
+          </button>
+
+          
+            <button class="btn play">
+                <i class="fa-solid fa-play"></i>
+            </button>          
+
+          <button class="btn skip-forward">
+            <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
